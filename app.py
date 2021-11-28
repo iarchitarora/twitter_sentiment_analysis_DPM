@@ -33,9 +33,9 @@ def index():
         name = request.form['p_name']
         typ = request.form['p_type']
         rtweet = request.form['frt']
-        print(name)
-        print(typ)
-        print(rtweet)
+        # print(name)
+        # print(typ)
+        # print(rtweet)
         #Anup
         A_Key="V2MKVagJ7FHniRjtZ6hv1nOx3"
         A_Key_Secret="Wza1nJO6oSAhUryZ68arQDMvEPh3GbhcpBn9kqPHl30uw9gRw9"
@@ -216,7 +216,7 @@ def index():
                 data = pd.Series(x).reset_index(name='value').rename(columns={'index': 'country'})
                 data['angle'] = data['value']/data['value'].sum() * 2*pi
                 data['color'] = ["seagreen","#ffa600","#58508d"]
-                print(data)
+                # print(data)
 
                 output_file("plot.html")
                 p = figure(height=350, title="Pie Chart", toolbar_location=None,
