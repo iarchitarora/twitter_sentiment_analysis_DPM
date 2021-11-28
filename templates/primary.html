@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='prm.css') }}">
+    <title>Twitter Analysis</title>
+</head>
+<body>
+    <h2 class="head">Twitter Sentiment Analysis Application</h2>
+    <div class = "input">
+        <form method = "post" action = "/"> 
+            <label>Enter the Person's Name:</label> 
+            <input type="text" name="p_name"> </input>
+            <br>
+            <br>
+            <label>Select the chart type for Sentiment visualization:</label>
+             <input type="radio" id="bar" name="p_type" value="Bar Graph">
+             <label>Bar Graph</label>
+             <input type="radio" id="pie" name="p_type" value="Pie Chart">
+             <label>Pie Chart</label>
+            <br/>
+            <br>
+            <label>Do you wish to filter ReTweets:</label>
+             <input type="radio" id="yes" name="frt" value="Yes">
+             <label>Yes</label>
+             <input type="radio" id="no" name="frt" value="No">
+             <label>No</label>
+            <br/>
+            <br>
+            <div class="sub"><input type="submit"> </input></div>
+                
+        </form>
+    </div>
+</body>
+</html>

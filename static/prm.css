@@ -1,0 +1,37 @@
+.head {
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50px;
+    color: beige;
+}
+body {
+    background-image: url("https://images8.alphacoders.com/473/thumb-1920-473471.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+.input  {   background-color:cadetblue;
+            
+            position:fixed;
+            top: 20%;
+            left: 14%;
+            opacity: 80%;
+            border-radius: 30px;
+            width: 900px;
+            height: 420px;
+            padding-left: 160px;
+            padding-top: 100px;
+            text-align:justify;
+            font-size: 21px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+.input input{
+    border: 4px solid dimgray;
+    border-radius: 15px;
+}
+.sub {
+    padding-left: 250px;
+    line-height: 40px;
+}
