@@ -158,13 +158,15 @@ def index():
             elif pold.loc[i].Polarity_Analysis == "negative":
                 neg.append(pold.loc[i].Tweets)
                 
+        path_static  = os.path.join(os.getcwd(),"static/")
+
         #Wordcloud for +ve Tweets
         text_pp = ' '.join(pos)
         word_cloud_p_processed = WordCloud(collocations = False, background_color = 'white').generate(proc(text_pp)) #Stopwords are removed in this line by 3rd argument
         plt.imshow(word_cloud_p_processed, interpolation='bilinear')
         plt.axis("off")
         plt.tight_layout(pad=0.1)
-        plt.savefig("static\\wordcld_p.png")
+        plt.savefig(path_static+"wordcld_p.png")
 
         #Wordcloud for Negative Tweets
         text_nn = ' '.join(neg)
@@ -172,7 +174,7 @@ def index():
         plt.imshow(word_cloud_p_processed, interpolation='bilinear')
         plt.axis("off")
         plt.tight_layout(pad=0.1)
-        plt.savefig("static\\wordcld_n.png")
+        plt.savefig(path_static+"wordcld_n.png")
 
         #Top 10 +ve tweet dataframe
         top_pos_10 = []
